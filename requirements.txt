@@ -1,0 +1,10 @@
+Flask==2
+# Other Python dependencies...
+
+# Front-end dependencies
+
+npm==6.14.14
+Werkzeug==2.2.2
+pip==24.0
+
+# Other npm packages...

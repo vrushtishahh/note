@@ -1,0 +1,36 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body class="bg-black text-slate-50">
+    <header>
+        <nav class="flex  space-x-4 lg:justify-evenly lg:text-lg   pt-2  sm:w-fit">
+            <a href="/"> Home</a>
+            <a href="/notes">Notes</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="">  Your Account</a>
+        </nav>
+      </header>
+
+    <div class="register-container">
+        <div class="register-form">
+            
+            <form method="post"  action="{{ url_for('register') }}">
+                <label for="email">Email</label>
+                <div><input type="email" class="text-black bg-slate-400" id="email" name="email" required></div>
+
+                <label for="password">Password</label>
+                <div><input type="password" class="text-black bg-slate-400" id="password" name="password" required></div>
+
+                <button class="p-2 m-2 bg-slate-700 rounded-sm" type="submit">Register</button>
+            </form>
+            <p class="pt-2 font-bold">Already have an account?<div> <a class="p-1 m-2 bg-slate-700 rounded-sm" href="{{ url_for('login') }}">Login here</a> </div></p>
+        </div>
+    </div>
+</body>
+</html>
