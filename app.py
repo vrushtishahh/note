@@ -9,7 +9,6 @@ app = Flask(__name__)
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")  
 mongo = PyMongo(app)
 bcrypt = Bcrypt(app)
-mongo = PyMongo(app)
 app.config['SECRET_KEY'] = os.urandom(24)
 
 @app.route('/login', methods=['GET', 'POST'])
