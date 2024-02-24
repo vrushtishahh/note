@@ -1,0 +1,11 @@
+# Ignore the virtual environment folder
+venv/
+
+# Ignore the Python bytecode files
+__pycache__/
+
+# Ignore the .env file containing sensitive information
+.env
+
+# Ignore node_modules
+node_modules/

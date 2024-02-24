@@ -6,7 +6,7 @@ import os
 import re
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb+srv://vrushti9421:UFNmPIfd92HNW9PR@cluster0pt.jzcfs46.mongodb.net/chatgpt"
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI")  
 mongo = PyMongo(app)
 bcrypt = Bcrypt(app)
 mongo = PyMongo(app)
