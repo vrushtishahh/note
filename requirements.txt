@@ -6,6 +6,7 @@ Werkzeug==2.0.3
 flask_pymongo==2.3.0
 Flask-Bcrypt==0.7.1
 dnspython==2.1.0  # Add this line for dnspython
+gunicorn==20.1.0
 
 
 
