@@ -134,7 +134,9 @@ def notes():
 
     return render_template("notes.html", myNotes=myNotes)
 
-# ...
+if __name__ == "__main__":
+    app.run()
+
 
 
 
